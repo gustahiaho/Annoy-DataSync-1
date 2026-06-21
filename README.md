@@ -1,5 +1,4 @@
 
-
 # Annoy: This should be a paper Title
 
 <p align="center">
@@ -127,10 +126,10 @@ python ./src/batched_api_inference.py \
 --temperature 0.7 \
 --max_tokens 4096
 ```
-You can also use GPT series models to do this transformation step, since recently the DeepSeek API is under heavy pressure. For example, set `--model` as `gpt-4o-mini-2024-07-18​` and change `--key` accordingly.
+You can also use GPT series models to do this transformation step, since recently the DeepSeek API is under heavy pressure. For example, set `--model` as `gpt-4o-mini-2024-07-18` and change `--key` accordingly.
 You may find some the requests failed, it's OK and we just skip them.
 
-*Note that we only provide the code to inference with OpenAI-style APIs. However, it is also 100\% feasible to deploy other open-source models and inference locally via frameworks like [vllm](https://github.com/vllm-project/vllm) or [sglang](https://github.com/sgl-project/sglang). Please refer to their official websites for more details.
+*Note that we only provide the code to inference with OpenAI-style APIs. However, it is also 100% feasible to deploy other open-source models and inference locally via frameworks like [vllm](https://github.com/vllm-project/vllm) or [sglang](https://github.com/sgl-project/sglang). Please refer to their official websites for more details.
 #### Step 2: Parse & Generate I/O Pairs
 ```
 python ./src/parse_gen_ios.py \
@@ -214,3 +213,7 @@ You can use any popular training framework to train your model like [llama-facto
 
 ## Acknowledgement
 We thank Koala NN, TCLV and OMEN for their valuable feedback and suggestions! 🤗🤗🤗
+
+**License**
+
+The license for this dataset is odc-by.
